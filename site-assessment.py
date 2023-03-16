@@ -395,7 +395,7 @@ def __main__():
     # print out of the model and data. Make sure things look alright. 
     print_incon(model,df)
     
-    roughness = 0.0         # Select the (closest) roughness of the terrain 
+    roughness = 0.03         # Select the (closest) roughness of the terrain 
     height = 10             # Select hub height
     bins = [0,4,8,12,16,20] # Histogram bins
 
