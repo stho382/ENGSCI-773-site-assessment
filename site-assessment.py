@@ -246,7 +246,7 @@ def read_met_data(fs):
         exit()
     
     df = pd.read_csv(fs, nrows=1, skiprows=1)
-    data_lat, data_lon = round(df['Latitude (dec.deg)'][0],3),round(df['Longitude (dec.deg)'][0],3)
+    data_lat, data_lon = round(df['Lat(dec_deg)'][0],3),round(df['Long(dec_deg)'][0],3)
 
     df = pd.read_csv(fs, skiprows=8)
     df = df.iloc[:-6]
@@ -386,8 +386,8 @@ def __main__():
     Runs all the plotting and data processing scripts
     '''
     
-    model_fs = 'GWA_file_name.lib'        # Note: must be a .lib file in the format downloaded from the GWA.
-    data_fs = 'CLIFLO_file_name.csv'      # Note: must be a .CSV file in the format from CLIFLO.
+    model_fs = 'gwa3_gwc_mxirhhqr.lib'        # Note: must be a .lib file in the format downloaded from the GWA.
+    data_fs = 'station_list.csv'      # Note: must be a .CSV file in the format from CLIFLO.
 
     # load data and model results
     model = load_wind_atlas_file(model_fs)
