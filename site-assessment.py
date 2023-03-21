@@ -386,8 +386,8 @@ def __main__():
     Runs all the plotting and data processing scripts
     '''
     
-    model_fs = 'gwa3_gwc_hvwz9a4m.lib'        # Note: must be a .lib file in the format downloaded from the GWA.
-    data_fs = 'station_list.csv'      # Note: must be a .CSV file in the format from CLIFLO.
+    model_fs = 'stho382_GWA_data.lib'        # Note: must be a .lib file in the format downloaded from the GWA.
+    data_fs = 'stho382_CLIFLO_data.csv'      # Note: must be a .CSV file in the format from CLIFLO.
 
     # load data and model results
     model = load_wind_atlas_file(model_fs)
